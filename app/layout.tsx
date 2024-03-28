@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <body className={inter.className + " antialiased text-slate-200 bg-gradient-to-b from-slate-900 to-slate-700"}>{children}</body>
     </html>
   );
 }
