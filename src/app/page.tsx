@@ -1,29 +1,30 @@
 'use client'
 
 import Image from "next/image";
-import portrait from "/img/portrait.jpeg";
-import send_icon from "/img/send-icon.png";
-import copy_icon from "/img/copy-icon.png";
-import github_icon from "/img/github-icon.png";
-import csharp_icon from "/img/csharp-icon.png";
-import css_icon from "/img/css-icon.png";
-import html_icon from "/img/html-icon.png";
-import js_icon from "/img/javascript-icon.png";
-import python_icon from "/img/python-icon.png";
-import react_icon from "/img/react-icon.png";
-import ts_icon from "/img/typescript-icon.png";
-import git_icon from "/img/git-icon.png";
-import sql_icon from "/img/sql-icon.png";
-import linux_icon from "/img/linux-icon.png";
-import unity_icon from "/img/unity-icon.png";
-import proj_example from "/img/proyecto_ejemplo.png";
-import image_twitchtovoice from "/img/image-twitchtovoice.png";
-import image_fakeapi from "/img/image-fakeapi.png";
-import image_fileconverter from "/img/image-fileconverter.png";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const portrait = "/img/portrait.jpeg";
+const send_icon = "/img/send-icon.png";
+const copy_icon = "/img/copy-icon.png";
+const github_icon = "/img/github-icon.png";
+const csharp_icon = "/img/csharp-icon.png";
+const css_icon = "/img/css-icon.png";
+const html_icon = "/img/html-icon.png";
+const js_icon = "/img/javascript-icon.png";
+const python_icon = "/img/python-icon.png";
+const react_icon = "/img/react-icon.png";
+const ts_icon = "/img/typescript-icon.png";
+const git_icon = "/img/git-icon.png";
+const sql_icon = "/img/sql-icon.png";
+const linux_icon = "/img/linux-icon.png";
+const unity_icon = "/img/unity-icon.png";
+const proj_example = "/img/proyecto_ejemplo.png";
+const image_twitchtovoice = "/img/image-twitchtovoice.png";
+const image_fakeapi = "/img/image-fakeapi.png";
+const image_fileconverter = "/img/image-fileconverter.png";
 
 interface ImageSkillProps {
   src: string;
@@ -73,7 +74,7 @@ function Titulo() {
           </div>
           <div className="md:w-auto w-1/2 -mr-10 -mt-10">
             <Image
-              src={portrait.src}
+              src={portrait}
               alt="Antonio Caballero"
               width={300}
               height={300}
@@ -126,28 +127,28 @@ function Proyectos() {
             <SlideItem
               hrefView="https://fakeapi.bsite.net/"
               hrefGithub="https://github.com/Tonitete/FakeApi"
-              imgSrc={image_fakeapi.src}
+              imgSrc={image_fakeapi}
               alt="Fake Api">
               <p>Api de productos fake para pruebas fetch y mockups con datos ficticios. Creada con .NET 7 C# y Razor. Tiene una documentación detallada con ejemplos de código en Javascript, C# y Python. </p>
             </SlideItem>
             <SlideItem
               hrefView="https://google.es"
               hrefGithub=""
-              imgSrc={proj_example.src}
+              imgSrc={proj_example}
               alt="Ejemplo 2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod, ut quo tempore explicabo, eum earum non vitae nemo modi veniam numquam laborum iste temporibus eligendi labore beatae quisquam? Modi?
             </SlideItem>
             <SlideItem
               hrefView="https://github.com/Tonitete/TwitchTextToVoice/releases"
               hrefGithub="https://github.com/Tonitete/TwitchTextToVoice"
-              imgSrc={image_twitchtovoice.src}
+              imgSrc={image_twitchtovoice}
               alt="Twitch text to voice">
                 <p>Programa de escritorio que permite convertir el chat de Twitch en voz. Desarrollado en C# para escritorio para lograr ser lo más ligero posible. Publicado a mediados de 2023 para facilitar la accesibilidad de personas con dificultades para seguir el chat, y ampliado para ser una herramienta útil para los streamers.</p>
             </SlideItem>
             <SlideItem
               hrefView="https://github.com/Tonitete/FileConverter/releases"
               hrefGithub="https://github.com/Tonitete/FileConverter"
-              imgSrc={image_fileconverter.src}
+              imgSrc={image_fileconverter}
               alt="File Converter">
               <p>Programa de escritorio portable en C# iddeado para convertir archivos de un formato a otro. Funciona con foto, video, sonidos y pdfs. Multilenguaje. Publicado y en uso desde mediados del 2023 con múltiples comentarios positivos de usuarios.</p>
             </SlideItem>
@@ -181,10 +182,10 @@ function Contacto() {
           </div>
           <div className="md:justify-normal md:w-auto justify-center items-center flex">
             <button className="rounded-full bg-blue-500 hover:bg-blue-700 text-center text-lg md:ml-5 mt-5 py-2 px-4 items-center" onClick={sendEmail}>
-              <Image height={20} width={20} src={send_icon.src} alt="send"></Image>
+              <Image height={20} width={20} src={send_icon} alt="send"></Image>
             </button>
             <button className="rounded-full bg-blue-500 hover:bg-blue-700 text-center text-lg ml-4 mt-5 py-2 px-4 items-center" onClick={copyClipboard}>
-              <Image height={20} width={20} src={copy_icon.src} alt="copy"></Image>
+              <Image height={20} width={20} src={copy_icon} alt="copy"></Image>
             </button>
             {showPopover && (
               <div className="absolute bg-gray-900 border border-gray-300 rounded p-2 shadow-md">
@@ -192,7 +193,7 @@ function Contacto() {
               </div>
             )}
             <a className="text-center text-lg ml-4 mt-5 items-center hover:animate-bounce" href="https://github.com/tonitete" target="_blank">
-              <Image height={45} width={45} src={github_icon.src} alt="github" className="drop-shadow-md"></Image>
+              <Image height={45} width={45} src={github_icon} alt="github" className="drop-shadow-md"></Image>
             </a>
           </div>
         </div>
@@ -208,13 +209,13 @@ function Skills() {
       <div className="border-2 rounded-xl border-gray-500 p-2 md:mx-20 mx-5 mt-1 shadow-lg mb-4 shadow-slate-950">
         <h1 className="text-xl font-bold pl-10 pt-3">Habilidades</h1>
         <div className="mt-5 mb-10 px-5 grid grid-cols-7 justify-items-center items-center">
-          <ImageSkill src={csharp_icon.src} alt="C Sharp"></ImageSkill>
-          <ImageSkill src={python_icon.src} alt="Python"></ImageSkill>
-          <ImageSkill src={js_icon.src} alt="Javascript"></ImageSkill>
-          <ImageSkill src={ts_icon.src} alt="Typescript"></ImageSkill>
-          <ImageSkill src={react_icon.src} alt="React"></ImageSkill>
-          <ImageSkill src={html_icon.src} alt="HTML5"></ImageSkill>
-          <ImageSkill src={css_icon.src} alt="CSS3"></ImageSkill>
+          <ImageSkill src={csharp_icon} alt="C Sharp"></ImageSkill>
+          <ImageSkill src={python_icon} alt="Python"></ImageSkill>
+          <ImageSkill src={js_icon} alt="Javascript"></ImageSkill>
+          <ImageSkill src={ts_icon} alt="Typescript"></ImageSkill>
+          <ImageSkill src={react_icon} alt="React"></ImageSkill>
+          <ImageSkill src={html_icon} alt="HTML5"></ImageSkill>
+          <ImageSkill src={css_icon} alt="CSS3"></ImageSkill>
         </div>
       </div>
     </>
@@ -227,11 +228,11 @@ function SoftSkills() {
       <div className="border-2 rounded-xl border-gray-500 p-2 md:mx-20 mx-5 mt-1 shadow-lg mb-4 shadow-slate-950">
         <h1 className="text-xl font-bold pl-10 pt-3">Habilidades blandas</h1>
         <div className="mt-5 mb-10 px-5 grid grid-cols-5 justify-items-center items-center">
-          <ImageSkill src={git_icon.src} alt="Git"></ImageSkill>
-          <ImageSkill src={github_icon.src} alt="Github"></ImageSkill>
-          <ImageSkill src={sql_icon.src} alt="SQL"></ImageSkill>
-          <ImageSkill src={linux_icon.src} alt="Arquitectura Linux"></ImageSkill>
-          <ImageSkill src={unity_icon.src} alt="Unity"></ImageSkill>
+          <ImageSkill src={git_icon} alt="Git"></ImageSkill>
+          <ImageSkill src={github_icon} alt="Github"></ImageSkill>
+          <ImageSkill src={sql_icon} alt="SQL"></ImageSkill>
+          <ImageSkill src={linux_icon} alt="Arquitectura Linux"></ImageSkill>
+          <ImageSkill src={unity_icon} alt="Unity"></ImageSkill>
         </div>
       </div>
     </>
@@ -270,7 +271,7 @@ const SlideItem: React.FC<SlideItemProps> = ({ hrefView, hrefGithub, imgSrc, alt
         <div className="flex justify-end p-3 items-center">
           <a href={hrefView} target="_blank" className="mr-2 px-2 py-1 bg-blue-600 text-black rounded hover:text-blue-600 hover:bg-black hover:scale-105 duration-300">Ver</a>
           <a href={hrefGithub} target="_blank" className="inline-flex items-center gap-1">
-            <Image src={github_icon.src} alt="Github" height={30} width={30} className="rounded-md hover:scale-150 duration-300" />
+            <Image src={github_icon} alt="Github" height={30} width={30} className="rounded-md hover:scale-150 duration-300" />
           </a>
         </div>
       </div>
