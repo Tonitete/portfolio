@@ -136,7 +136,7 @@ function Proyectos() {
               hrefGithub=""
               imgSrc={proj_example}
               alt="Ejemplo 2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quod, ut quo tempore explicabo, eum earum non vitae nemo modi veniam numquam laborum iste temporibus eligendi labore beatae quisquam? Modi?
+                <p>Ejemplo de proyecto de sitio web. Creada con React, Typescript y Tailwind CSS. </p>
             </SlideItem>
             <SlideItem
               hrefView="https://github.com/Tonitete/TwitchTextToVoice/releases"
@@ -150,7 +150,7 @@ function Proyectos() {
               hrefGithub="https://github.com/Tonitete/FileConverter"
               imgSrc={image_fileconverter}
               alt="File Converter">
-              <p>Programa de escritorio portable en C# iddeado para convertir archivos de un formato a otro. Funciona con foto, video, sonidos y pdfs. Multilenguaje. Publicado y en uso desde mediados del 2023 con múltiples comentarios positivos de usuarios.</p>
+              <p>Programa de escritorio portable en C# ideado para convertir archivos de un formato a otro. Funciona con foto, video, sonidos y pdfs. Multilenguaje. Publicado y en uso desde mediados del 2023 con múltiples comentarios positivos de usuarios.</p>
             </SlideItem>
           </Slider>
         </div>
@@ -239,6 +239,7 @@ function SoftSkills() {
   );
 }
 
+
 const ImageSkill: React.FC<ImageSkillProps> = ({ src, alt }) => {
   const [popover, setPopover] = useState(false);
   return (
@@ -279,3 +280,4 @@ const SlideItem: React.FC<SlideItemProps> = ({ hrefView, hrefGithub, imgSrc, alt
     </div>
   );
 }
+
