@@ -131,13 +131,13 @@ function Proyectos() {
               alt="Fake Api">
               <p>Api de productos fake para pruebas fetch y mockups con datos ficticios. Creada con .NET 7 C# y Razor. Tiene una documentación detallada con ejemplos de código en Javascript, C# y Python. </p>
             </SlideItem>
-            <SlideItem
+            {/* <SlideItem
               hrefView="https://google.es"
               hrefGithub=""
               imgSrc={proj_example}
               alt="Ejemplo 2">
                 <p>Ejemplo de proyecto de sitio web. Creada con React, Typescript y Tailwind CSS. </p>
-            </SlideItem>
+            </SlideItem> */}
             <SlideItem
               hrefView="https://github.com/Tonitete/TwitchTextToVoice/releases"
               hrefGithub="https://github.com/Tonitete/TwitchTextToVoice"
