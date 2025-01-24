@@ -11,7 +11,11 @@ export function ImageSkill ({ src, alt }: ImageSkillProps): JSX.Element {
   return (
     <div className='relative'>
       <Image
-        height={96} width={96} src={src} alt={alt} className='transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 duration-300'
+        height={96}
+        width={96}
+        src={src}
+        alt={alt}
+        className='transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-110 duration-300'
         onMouseEnter={() => setPopover(true)}
         onMouseLeave={() => setPopover(false)}
       />
