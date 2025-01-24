@@ -8,6 +8,7 @@ export function Skills (): JSX.Element {
   const pythonIcon = '/portfolio/img/python-icon.png'
   const reactIcon = '/portfolio/img/react-icon.png'
   const tsIcon = '/portfolio/img/typescript-icon.png'
+  const netIcon = '/portfolio/img/dotnet-icon.png'
 
   return (
     <>
@@ -15,6 +16,7 @@ export function Skills (): JSX.Element {
         <h1 className='text-xl font-bold pl-10 pt-3'>Habilidades</h1>
         <div className='mt-5 mb-10 px-5 grid grid-cols-7 justify-items-center items-center'>
           <ImageSkill src={csharpIcon} alt='C Sharp' />
+          <ImageSkill src={netIcon} alt='.NET' />
           <ImageSkill src={pythonIcon} alt='Python' />
           <ImageSkill src={jsIcon} alt='Javascript' />
           <ImageSkill src={tsIcon} alt='Typescript' />

@@ -15,7 +15,7 @@ export function SoftSkills (): JSX.Element {
           <ImageSkill src={gitIcon} alt='Git' />
           <ImageSkill src={githubIcon} alt='Github' />
           <ImageSkill src={sqlIcon} alt='SQL' />
-          <ImageSkill src={linuxIcon} alt='Arquitectura Linux' />
+          <ImageSkill src={linuxIcon} alt='Arquitectura Linux' /> {/* Arch btw */}
           <ImageSkill src={unityIcon} alt='Unity' />
         </div>
       </div>
