@@ -14,7 +14,7 @@ export function Skills (): JSX.Element {
     <>
       <div className='border-2 rounded-xl border-gray-500 p-2 md:mx-20 mx-5 mt-1 shadow-lg mb-4 shadow-slate-950'>
         <h1 className='text-xl font-bold pl-10 pt-3'>Habilidades</h1>
-        <div className='mt-5 mb-10 px-5 grid grid-cols-7 justify-items-center items-center'>
+        <div className='mt-5 mb-10 px-5 grid grid-cols-8 justify-items-center items-center'>
           <ImageSkill src={csharpIcon} alt='C Sharp' />
           <ImageSkill src={netIcon} alt='.NET' />
           <ImageSkill src={pythonIcon} alt='Python' />
