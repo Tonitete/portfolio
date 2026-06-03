@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Antonio Caballero Miró — Portfolio
 
-## Getting Started
+**🌐 [tonitete.github.io/portfolio](https://tonitete.github.io/portfolio)**
 
-First, run the development server:
+Personal portfolio built with Next.js, showcasing my experience, tech stack and background as a Fullstack Developer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Features
+
+- **Multilingual** — Spanish (default), English, Catalan
+- **Dark / Light theme** — dark by default, toggle in navbar
+- **Sections:** Home · Experience timeline · Technology stack
+- **Animated star field background** with realistic stellar colors and a neutron star pulsar
+- **Responsive** — mobile-first layout
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router, static export) |
+| Styling | Tailwind CSS v4 |
+| Language | TypeScript |
+| Icons | react-icons, simple-icons |
+| Deployment | GitHub Pages via GitHub Actions |
+
+## Project Structure
+
+```
+app/
+  [lang]/               # Locale-aware routes (es / en / ca)
+    components/         # All UI components
+    page.tsx            # Main portfolio page
+    layout.tsx          # Root layout with star field background
+  page.tsx              # Root redirect → /es
+dictionaries/
+  es.json               # Spanish content (canonical)
+  en.json               # English content
+  ca.json               # Catalan content
+  index.ts              # Dictionary types and loader
+public/
+  icons/                # Custom brand icons not in simple-icons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All page content lives in `dictionaries/{locale}.json`. To update:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Bio, job experience, tech stack** → edit the JSON files directly
+- **Availability status** → change `home.availability.status` to `"open"`, `"passive"`, or `"closed"`
+- **Add a language** → add a new JSON file and register it in `dictionaries/index.ts`
 
-## Learn More
+## Local Development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) — it redirects to `/es` automatically.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Deployed automatically to GitHub Pages on every push to `main` via `.github/workflows/nextjs.yml`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The workflow uses `actions/configure-pages` which injects the correct `basePath` (`/portfolio`) and sets `output: 'export'` for static generation.
