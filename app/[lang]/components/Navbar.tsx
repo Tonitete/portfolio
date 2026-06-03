@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Dictionary, Locale } from '../../../dictionaries'
 import { locales } from '../../../dictionaries'
 
@@ -46,10 +47,15 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
         {/* Logo */}
         <button
-          onClick={() => onSectionChange('home')}
           className="text-sm font-semibold tracking-tight text-fg hover:text-accent transition-colors"
         >
-          ACM
+          <Image
+            src="/icon.svg"
+            alt="Logo"
+            width={32}
+            height={32}
+            onClick={() => onSectionChange('home')}
+          />
         </button>
 
         {/* Desktop nav */}
