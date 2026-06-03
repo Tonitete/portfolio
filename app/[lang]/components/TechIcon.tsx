@@ -63,16 +63,16 @@ const TECH: Record<string, IconEntry> = {
   Neovim: { type: 'si', icon: siNeovim, color: '#57A143' },
 
   // Custom icons — place file in /public/icons/ with the name below
-  'C#': { type: 'img', src: '/icons/csharp.png' },
-  SQL: { type: 'img', src: '/icons/sql.png' },
-  'Entity Framework': { type: 'img', src: '/icons/entityframework.png' },
-  'SQL Server': { type: 'img', src: '/icons/sqlserver.png' },
-  Informix: { type: 'img', src: '/icons/informix.png' },
-  Azure: { type: 'img', src: '/icons/azure.png' },
-  AWS: { type: 'img', src: '/icons/aws.png' },
-  'Visual Studio': { type: 'img', src: '/icons/visualstudio.png' },
-  'VS Code': { type: 'img', src: '/icons/vscode.png' },
-  'Azure DevOps': { type: 'img', src: '/icons/azuredevops.png' }
+  'C#': { type: 'img', src: '/portfolio/icons/csharp.png' },
+  SQL: { type: 'img', src: '/portfolio/icons/sql.png' },
+  'Entity Framework': { type: 'img', src: '/portfolio/icons/entityframework.png' },
+  'SQL Server': { type: 'img', src: '/portfolio/icons/sqlserver.png' },
+  Informix: { type: 'img', src: '/portfolio/icons/informix.png' },
+  Azure: { type: 'img', src: '/portfolio/icons/azure.png' },
+  AWS: { type: 'img', src: '/portfolio/icons/aws.png' },
+  'Visual Studio': { type: 'img', src: '/portfolio/icons/visualstudio.png' },
+  'VS Code': { type: 'img', src: '/portfolio/icons/vscode.png' },
+  'Azure DevOps': { type: 'img', src: '/portfolio/icons/azuredevops.png' }
 }
 
 interface TechIconProps {

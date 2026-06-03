@@ -50,7 +50,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
           className="text-sm font-semibold tracking-tight text-fg hover:text-accent transition-colors"
         >
           <Image
-            src={'/icon.svg'}
+            src={'/portfolio/icon.svg'}
             alt="Logo"
             width={32}
             height={32}
