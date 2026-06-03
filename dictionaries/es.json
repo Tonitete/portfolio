@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "technology": "Tecnología",
+    "toggleTheme": "Cambiar tema"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Antonio Caballero Miró",
+    "title": "Desarrollador Fullstack",
+    "subtitle": "Especializado en backend",
+    "bio": "Desarrollador Fullstack con sólida experiencia en backend y arquitectura de sistemas. Trabajo a lo largo de todo el stack, de la infraestructura cloud hasta el frontend, con foco en código mantenible y soluciones pragmáticas. Me adapto rápido a nuevas tecnologías y disfruto colaborando con equipos multidisciplinares para entregar productos sólidos.",
+    "contactTitle": "Contacto",
+    "email": "antonio.caballero.miro@gmail.com",
+    "languagesTitle": "Idiomas",
+    "languages": [
+      {
+        "name": "Catalán",
+        "level": "Nativo"
+      },
+      {
+        "name": "Castellano",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Alto"
+      }
+    ],
+    "hobbiesTitle": "Intereses",
+    "hobbies": [
+      "Programación",
+      "Lectura",
+      "Videojuegos"
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Actualidad",
+    "jobs": [
+      {
+        "id": "spertoo",
+        "company": "SPERTOO",
+        "role": "FullStack Developer & SysAdmin",
+        "start": "Septiembre 2025",
+        "end": null,
+        "description": "Desarrollo FullStack en Node.js y React, asumiendo también responsabilidades de SysAdmin y DevOps. Diseño y mantenimiento de la infraestructura cloud en AWS con Docker, y gestión de servidores Linux y Windows.",
+        "tech": [
+          "Node.js",
+          "React",
+          "AWS",
+          "Docker",
+          "Linux"
+        ]
+      },
+      {
+        "id": "abast",
+        "company": "ABAST",
+        "role": "Fullstack Developer .Net / React",
+        "start": "Febrero 2023",
+        "end": "Septiembre 2025",
+        "description": "Consultoría fullstack en proyectos para distintos sectores e industrias. Desarrollo de soluciones .NET para escritorio y web, con interfaces en React y Angular adaptadas a los requisitos específicos de cada cliente.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "Angular",
+          "TypeScript"
+        ]
+      },
+      {
+        "id": "seys",
+        "company": "Seys",
+        "role": "Fullstack Developer .Net / React",
+        "start": "Septiembre 2022",
+        "end": "Enero 2023",
+        "description": "Desarrollo fullstack .NET/React para clientes de distintos sectores. Análisis y documentación de requisitos funcionales, mantenimiento de bases de datos y modernización de aplicaciones legacy.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "SQL"
+        ]
+      },
+      {
+        "id": "boixereu",
+        "company": "Serveis Immobiliaris Boixereu, S.L.",
+        "role": "Desarrollador Web & Gestor de BBDD SQL",
+        "start": "Septiembre 2014",
+        "end": "Noviembre 2021",
+        "note": "Sep 2014 – Sep 2015 / Nov 2018 – Nov 2021",
+        "description": "Desarrollo y mantenimiento de la web corporativa y aplicaciones internas para Android y Windows. Diseño e implementación de base de datos SQL desde cero para la gestión interna de la empresa.",
+        "tech": [
+          "SQL",
+          "Android",
+          "Windows",
+          "JavaScript"
+        ]
+      },
+      {
+        "id": "afflelou",
+        "company": "Alain Afflelou",
+        "role": "Dependiente",
+        "start": "Abril 2017",
+        "end": "Septiembre 2018",
+        "description": "Dependiente en stand externo para la venta especializada de gafas de sol.",
+        "tech": []
+      },
+      {
+        "id": "vodafone",
+        "company": "Vodafone SAU",
+        "role": "Comercial",
+        "start": "Septiembre 2015",
+        "end": "Mayo 2017",
+        "description": "Comercial puerta a puerta a nivel residencial y empresas.",
+        "tech": []
+      },
+      {
+        "id": "caufar",
+        "company": "Caufar Ingeniería",
+        "role": "Aprendiz de Ingeniería",
+        "start": "Enero 2008",
+        "end": "Diciembre 2011",
+        "description": "Organización de almacén y reparación de componentes.",
+        "tech": []
+      }
+    ]
+  },
+  "technology": {
+    "title": "Tecnologías",
+    "categories": [
+      {
+        "id": "languages",
+        "label": "Lenguajes",
+        "items": [
+          "C#",
+          "TypeScript",
+          "JavaScript",
+          "Python",
+          "C++",
+          "SQL"
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Angular",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend & Runtime",
+        "items": [
+          ".NET",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Cloud",
+        "items": [
+          "Docker",
+          "AWS",
+          "Azure",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "id": "tools",
+        "label": "Herramientas",
+        "items": [
+          "Visual Studio",
+          "VS Code",
+          "Unity"
+        ]
+      }
+    ]
+  }
+}

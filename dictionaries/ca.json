@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Inici",
+    "experience": "Experiència",
+    "technology": "Tecnologia",
+    "toggleTheme": "Canviar tema"
+  },
+  "home": {
+    "greeting": "Hola, soc",
+    "name": "Antonio Caballero Miró",
+    "title": "Desenvolupador Fullstack",
+    "subtitle": "Especialitzat en backend",
+    "bio": "Desenvolupador Fullstack amb sòlida experiència en backend i arquitectura de sistemes. Treballo al llarg de tot l'stack, des de la infraestructura cloud fins al frontend, amb focus en codi mantenible i solucions pragmàtiques. M'adapto ràpid a noves tecnologies i gaudeixo col·laborant amb equips multidisciplinaris per lliurar productes sòlids.",
+    "contactTitle": "Contacte",
+    "email": "antonio.caballero.miro@gmail.com",
+    "languagesTitle": "Idiomes",
+    "languages": [
+      {
+        "name": "Català",
+        "level": "Natiu"
+      },
+      {
+        "name": "Castellà",
+        "level": "Natiu"
+      },
+      {
+        "name": "Anglès",
+        "level": "Alt"
+      }
+    ],
+    "hobbiesTitle": "Interessos",
+    "hobbies": [
+      "Programació",
+      "Lectura",
+      "Videojocs"
+    ]
+  },
+  "experience": {
+    "title": "Experiència",
+    "present": "Actualitat",
+    "jobs": [
+      {
+        "id": "spertoo",
+        "company": "SPERTOO",
+        "role": "FullStack Developer & SysAdmin",
+        "start": "Setembre 2025",
+        "end": null,
+        "description": "Desenvolupament FullStack en Node.js i React, assumint també responsabilitats de SysAdmin i DevOps. Disseny i manteniment de la infraestructura cloud a AWS amb Docker, i gestió de servidors Linux i Windows.",
+        "tech": [
+          "Node.js",
+          "React",
+          "AWS",
+          "Docker",
+          "Linux"
+        ]
+      },
+      {
+        "id": "abast",
+        "company": "ABAST",
+        "role": "Fullstack Developer .Net / React",
+        "start": "Febrer 2023",
+        "end": "Setembre 2025",
+        "description": "Consultoria fullstack en projectes per a diversos sectors i indústries. Desenvolupament de solucions .NET per a escriptori i web, amb interfícies en React i Angular adaptades als requisits específics de cada client.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "Angular",
+          "TypeScript"
+        ]
+      },
+      {
+        "id": "seys",
+        "company": "Seys",
+        "role": "Fullstack Developer .Net / React",
+        "start": "Setembre 2022",
+        "end": "Gener 2023",
+        "description": "Desenvolupament fullstack .NET/React per a clients de diversos sectors. Anàlisi i documentació de requisits funcionals, manteniment de bases de dades i modernització d'aplicacions legacy.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "SQL"
+        ]
+      },
+      {
+        "id": "boixereu",
+        "company": "Serveis Immobiliaris Boixereu, S.L.",
+        "role": "Desenvolupador Web & Gestor de BBDD SQL",
+        "start": "Setembre 2014",
+        "end": "Novembre 2021",
+        "note": "Set 2014 – Set 2015 / Nov 2018 – Nov 2021",
+        "description": "Desenvolupament i manteniment de la web corporativa i aplicacions internes per a Android i Windows. Disseny i implementació d'una base de dades SQL des de zero per a la gestió interna de l'empresa.",
+        "tech": [
+          "SQL",
+          "Android",
+          "Windows",
+          "JavaScript"
+        ]
+      },
+      {
+        "id": "afflelou",
+        "company": "Alain Afflelou",
+        "role": "Dependent",
+        "start": "Abril 2017",
+        "end": "Setembre 2018",
+        "description": "Dependent en stand extern per a la venda especialitzada d'ulleres de sol.",
+        "tech": []
+      },
+      {
+        "id": "vodafone",
+        "company": "Vodafone SAU",
+        "role": "Comercial",
+        "start": "Setembre 2015",
+        "end": "Maig 2017",
+        "description": "Comercial porta a porta a nivell residencial i empreses.",
+        "tech": []
+      },
+      {
+        "id": "caufar",
+        "company": "Caufar Ingeniería",
+        "role": "Aprenent d'Enginyeria",
+        "start": "Gener 2008",
+        "end": "Desembre 2011",
+        "description": "Organització de magatzem i reparació de components.",
+        "tech": []
+      }
+    ]
+  },
+  "technology": {
+    "title": "Tecnologies",
+    "categories": [
+      {
+        "id": "languages",
+        "label": "Llenguatges",
+        "items": [
+          "C#",
+          "TypeScript",
+          "JavaScript",
+          "Python",
+          "C++",
+          "SQL"
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Angular",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend & Runtime",
+        "items": [
+          ".NET",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Cloud",
+        "items": [
+          "Docker",
+          "AWS",
+          "Azure",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "id": "tools",
+        "label": "Eines",
+        "items": [
+          "Visual Studio",
+          "VS Code",
+          "Unity"
+        ]
+      }
+    ]
+  }
+}

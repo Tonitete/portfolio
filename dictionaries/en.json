@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "technology": "Technology",
+    "toggleTheme": "Toggle theme"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "name": "Antonio Caballero Miró",
+    "title": "Fullstack Developer",
+    "subtitle": "Backend Specialist",
+    "bio": "Fullstack developer with solid experience in backend development and systems architecture. I work across the entire stack, from cloud infrastructure to the frontend, with a focus on maintainable code and pragmatic solutions. I pick up new technologies quickly and enjoy collaborating with cross-functional teams to ship robust products.",
+    "contactTitle": "Contact",
+    "email": "antonio.caballero.miro@gmail.com",
+    "languagesTitle": "Languages",
+    "languages": [
+      {
+        "name": "Catalan",
+        "level": "Native"
+      },
+      {
+        "name": "Spanish",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Advanced"
+      }
+    ],
+    "hobbiesTitle": "Interests",
+    "hobbies": [
+      "Programming",
+      "Reading",
+      "Video games"
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "jobs": [
+      {
+        "id": "spertoo",
+        "company": "SPERTOO",
+        "role": "FullStack Developer & SysAdmin",
+        "start": "September 2025",
+        "end": null,
+        "description": "FullStack development in Node.js and React, also taking on SysAdmin and DevOps responsibilities. Design and maintenance of cloud infrastructure on AWS with Docker, and management of Linux and Windows servers.",
+        "tech": [
+          "Node.js",
+          "React",
+          "AWS",
+          "Docker",
+          "Linux"
+        ]
+      },
+      {
+        "id": "abast",
+        "company": "ABAST",
+        "role": "Fullstack Developer .Net / React",
+        "start": "February 2023",
+        "end": "September 2025",
+        "description": "Fullstack consulting across projects in various sectors and industries. Built .NET solutions for both desktop and web, with React and Angular frontends tailored to the specific requirements of each client.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "Angular",
+          "TypeScript"
+        ]
+      },
+      {
+        "id": "seys",
+        "company": "Seys",
+        "role": "Fullstack Developer .Net / React",
+        "start": "September 2022",
+        "end": "January 2023",
+        "description": "Fullstack .NET/React development for clients across different sectors. Requirements analysis and functional documentation, database maintenance, and modernization of legacy applications.",
+        "tech": [
+          ".NET",
+          "C#",
+          "React",
+          "SQL"
+        ]
+      },
+      {
+        "id": "boixereu",
+        "company": "Serveis Immobiliaris Boixereu, S.L.",
+        "role": "Web Developer & SQL Database Manager",
+        "start": "September 2014",
+        "end": "November 2021",
+        "note": "Sep 2014 – Sep 2015 / Nov 2018 – Nov 2021",
+        "description": "Development and maintenance of the corporate website and internal applications for Android and Windows. Designed and implemented a SQL database from scratch for the company's internal management.",
+        "tech": [
+          "SQL",
+          "Android",
+          "Windows",
+          "JavaScript"
+        ]
+      },
+      {
+        "id": "afflelou",
+        "company": "Alain Afflelou",
+        "role": "Sales Associate",
+        "start": "April 2017",
+        "end": "September 2018",
+        "description": "Sales associate at an external stand specializing in sunglasses.",
+        "tech": []
+      },
+      {
+        "id": "vodafone",
+        "company": "Vodafone SAU",
+        "role": "Sales Representative",
+        "start": "September 2015",
+        "end": "May 2017",
+        "description": "Door-to-door sales representative for residential and business clients.",
+        "tech": []
+      },
+      {
+        "id": "caufar",
+        "company": "Caufar Ingeniería",
+        "role": "Engineering Apprentice",
+        "start": "January 2008",
+        "end": "December 2011",
+        "description": "Warehouse organization and component repair.",
+        "tech": []
+      }
+    ]
+  },
+  "technology": {
+    "title": "Technologies",
+    "categories": [
+      {
+        "id": "languages",
+        "label": "Languages",
+        "items": [
+          "C#",
+          "TypeScript",
+          "JavaScript",
+          "Python",
+          "C++",
+          "SQL"
+        ]
+      },
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Angular",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend & Runtime",
+        "items": [
+          ".NET",
+          "Node.js"
+        ]
+      },
+      {
+        "id": "devops",
+        "label": "DevOps & Cloud",
+        "items": [
+          "Docker",
+          "AWS",
+          "Azure",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "id": "tools",
+        "label": "Tools",
+        "items": [
+          "Visual Studio",
+          "VS Code",
+          "Unity"
+        ]
+      }
+    ]
+  }
+}
