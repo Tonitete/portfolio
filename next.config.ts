@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const isProd = process.env.GITHUB_ACTIONS === 'true'
 
 const nextConfig: NextConfig = {
-  env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '/portfolio' : '',
-  },
-};
+  basePath: isProd ? '/portfolio' : '',
+  output: 'export',
+  reactStrictMode: true
+}
 
-export default nextConfig;
+export default nextConfig

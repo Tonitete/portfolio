@@ -79,7 +79,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.deployment.outputs.page_url }}
 
   # Deployment job
   deploy:

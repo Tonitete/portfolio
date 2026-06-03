@@ -41,7 +41,6 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
   function langHref (l: Locale) {
     return `/${l}#${activeSection}`
   }
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-[rgba(10,10,10,0.85)] backdrop-blur-md">
@@ -51,7 +50,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
           className="text-sm font-semibold tracking-tight text-fg hover:text-accent transition-colors"
         >
           <Image
-            src={`${basePath}/icon.svg`}
+            src={'/icon.svg'}
             alt="Logo"
             width={32}
             height={32}
