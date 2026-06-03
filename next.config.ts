@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.GITHUB_ACTIONS === 'true'
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/portfolio' : '',
+  },
 };
 
 export default nextConfig;

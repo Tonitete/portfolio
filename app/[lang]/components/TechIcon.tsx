@@ -109,9 +109,10 @@ export function TechIcon ({ name, size = 32 }: TechIconProps) {
   }
 
   if (entry.type === 'img') {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
     return (
       <Image
-        src={entry.src}
+        src={`${basePath}${entry.src}`}
         alt={name}
         width={size}
         height={size}
