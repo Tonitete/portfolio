@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import type { Dictionary, Locale } from '../../../dictionaries'
 import { locales } from '../../../dictionaries'
 
@@ -73,7 +74,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
           {/* Language switcher */}
           <div className="hidden sm:flex items-center gap-1 border border-border rounded-full px-2 py-1">
             {locales.map((l) => (
-              <a
+              <Link
                 key={l}
                 href={langHref(l)}
                 className={`text-xs font-medium px-2 py-0.5 rounded-full transition-colors ${
@@ -83,7 +84,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
                 }`}
               >
                 {l.toUpperCase()}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -134,7 +135,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
           ))}
           <div className="flex items-center gap-1 pt-2 border-t border-border">
             {locales.map((l) => (
-              <a
+              <Link
                 key={l}
                 href={langHref(l)}
                 className={`text-xs font-medium px-3 py-1 rounded-full border transition-colors ${
@@ -144,7 +145,7 @@ export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
                 }`}
               >
                 {l.toUpperCase()}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
