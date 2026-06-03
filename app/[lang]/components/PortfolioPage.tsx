@@ -7,7 +7,7 @@ import { Navbar } from './Navbar'
 type Section = 'home' | 'experience' | 'technology'
 const SECTIONS: Section[] = ['home', 'experience', 'technology']
 
-function getInitialSection(): Section {
+function getInitialSection (): Section {
   if (typeof window === 'undefined') return 'home'
   const hash = window.location.hash.replace('#', '') as Section
   return SECTIONS.includes(hash) ? hash : 'home'
@@ -19,14 +19,14 @@ interface Props {
   children: [React.ReactNode, React.ReactNode, React.ReactNode]
 }
 
-export function PortfolioPage({ dict, lang, children }: Props) {
+export function PortfolioPage ({ dict, lang, children }: Props) {
   const [activeSection, setActiveSection] = useState<Section>('home')
 
   useEffect(() => {
     setActiveSection(getInitialSection())
   }, [])
 
-  function changeSection(section: Section) {
+  function changeSection (section: Section) {
     setActiveSection(section)
     window.location.hash = section
   }
@@ -47,14 +47,14 @@ export function PortfolioPage({ dict, lang, children }: Props) {
         </div>
         <div
           style={{
-            display: activeSection === 'experience' ? 'block' : 'none',
+            display: activeSection === 'experience' ? 'block' : 'none'
           }}
         >
           {experienceSection}
         </div>
         <div
           style={{
-            display: activeSection === 'technology' ? 'block' : 'none',
+            display: activeSection === 'technology' ? 'block' : 'none'
           }}
         >
           {technologySection}

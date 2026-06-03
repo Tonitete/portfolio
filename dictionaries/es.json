@@ -17,23 +17,55 @@
     "languages": [
       {
         "name": "Catalán",
-        "level": "Nativo"
+        "level": "Nativo",
+        "dots": 5
       },
       {
         "name": "Castellano",
-        "level": "Nativo"
+        "level": "Nativo",
+        "dots": 5
       },
       {
         "name": "Inglés",
-        "level": "Alto"
+        "level": "Alto",
+        "dots": 4
       }
     ],
     "hobbiesTitle": "Intereses",
     "hobbies": [
-      "Programación",
-      "Lectura",
-      "Videojuegos"
-    ]
+      {
+        "text": "Proyectos personales & Open Source",
+        "icon": "code"
+      },
+      {
+        "text": "Lectura: ciencia ficción y fantasía",
+        "icon": "bookopen"
+      },
+      {
+        "text": "Videojuegos",
+        "icon": "monitor"
+      },
+      {
+        "text": "Homelab & self-hosting",
+        "icon": "server"
+      },
+      {
+        "text": "Tecnología: blogs, investigación y tendencias",
+        "icon": "trending"
+      }
+    ],
+    "copiedLabel": "Copiado",
+    "github": "https://github.com/Tonitete",
+    "location": "Barcelona, ES",
+    "availability": {
+      "status": "passive",
+      "labels": {
+        "open": "Abierto a nuevas oportunidades",
+        "passive": "Abierto a escuchar ofertas",
+        "closed": "No disponible"
+      }
+    },
+    "copyLabel": "Copiar"
   },
   "experience": {
     "title": "Experiencia",
@@ -45,10 +77,14 @@
         "role": "FullStack Developer & SysAdmin",
         "start": "Septiembre 2025",
         "end": null,
-        "description": "Desarrollo FullStack en Node.js y React, asumiendo también responsabilidades de SysAdmin y DevOps. Diseño y mantenimiento de la infraestructura cloud en AWS con Docker, y gestión de servidores Linux y Windows.",
+        "description": "Desarrollo FullStack en Node.js, React y .NET, asumiendo también la responsabilidad completa de SysAdmin y DevOps. Diseño y mantenimiento de la infraestructura cloud en AWS: despliegue con Docker, configuración de redes (VPC, grupos de seguridad, IAM), pipelines CI/CD, monitorización con alertas, y estrategias de backup y recuperación ante desastres. Gestión y bastionado de servidores Linux y Windows, incluyendo nginx, SSL/TLS y optimización de costes en cloud.",
         "tech": [
           "Node.js",
           "React",
+          "Python",
+          ".NET Core",
+          ".NET Framework",
+          "Entity Framework",
           "AWS",
           "Docker",
           "Linux"
@@ -62,8 +98,11 @@
         "end": "Septiembre 2025",
         "description": "Consultoría fullstack en proyectos para distintos sectores e industrias. Desarrollo de soluciones .NET para escritorio y web, con interfaces en React y Angular adaptadas a los requisitos específicos de cada cliente.",
         "tech": [
-          ".NET",
+          ".NET Core",
+          ".NET Framework",
+          "Entity Framework",
           "C#",
+          "Python",
           "React",
           "Angular",
           "TypeScript"
@@ -77,8 +116,11 @@
         "end": "Enero 2023",
         "description": "Desarrollo fullstack .NET/React para clientes de distintos sectores. Análisis y documentación de requisitos funcionales, mantenimiento de bases de datos y modernización de aplicaciones legacy.",
         "tech": [
-          ".NET",
+          ".NET Core",
+          ".NET Framework",
+          "Entity Framework",
           "C#",
+          "Python",
           "React",
           "SQL"
         ]
@@ -92,6 +134,12 @@
         "note": "Sep 2014 – Sep 2015 / Nov 2018 – Nov 2021",
         "description": "Desarrollo y mantenimiento de la web corporativa y aplicaciones internas para Android y Windows. Diseño e implementación de base de datos SQL desde cero para la gestión interna de la empresa.",
         "tech": [
+          "C#",
+          ".NET Core",
+          ".NET Framework",
+          "Entity Framework",
+          "React",
+          "React Native",
           "SQL",
           "Android",
           "Windows",
@@ -147,17 +195,35 @@
         "label": "Frontend",
         "items": [
           "React",
+          "React Native",
           "Angular",
+          "Next.js",
           "HTML",
-          "CSS"
+          "CSS",
+          "Tailwind CSS"
         ]
       },
       {
         "id": "backend",
         "label": "Backend & Runtime",
         "items": [
-          ".NET",
-          "Node.js"
+          ".NET Core",
+          ".NET Framework",
+          "Entity Framework",
+          "Node.js",
+          "Django"
+        ]
+      },
+      {
+        "id": "databases",
+        "label": "Bases de Datos",
+        "items": [
+          "SQL Server",
+          "PostgreSQL",
+          "MariaDB",
+          "Informix",
+          "MySQL",
+          "SQLite"
         ]
       },
       {
@@ -165,10 +231,12 @@
         "label": "DevOps & Cloud",
         "items": [
           "Docker",
+          "Podman",
           "AWS",
           "Azure",
           "Git",
-          "Linux"
+          "Linux",
+          "nginx"
         ]
       },
       {
@@ -177,7 +245,10 @@
         "items": [
           "Visual Studio",
           "VS Code",
-          "Unity"
+          "Postman",
+          "Rider",
+          "Azure DevOps",
+          "Neovim"
         ]
       }
     ]

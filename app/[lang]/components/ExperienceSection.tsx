@@ -4,7 +4,7 @@ interface Props {
   dict: Dictionary
 }
 
-export function ExperienceSection({ dict }: Props) {
+export function ExperienceSection ({ dict }: Props) {
   const { experience } = dict
   const { jobs } = experience
 
@@ -19,7 +19,7 @@ export function ExperienceSection({ dict }: Props) {
         <div className="absolute left-0 sm:left-4 top-0 bottom-0 w-px bg-border" />
 
         <ol className="space-y-8">
-          {jobs.map((job, index) => {
+          {jobs.map((job) => {
             const isTech = (job.tech ?? []).length > 0
             const isCurrent = job.end === null
 
@@ -38,8 +38,8 @@ export function ExperienceSection({ dict }: Props) {
                 <div
                   className={`rounded-2xl border p-6 transition-colors ${
                     isCurrent
-                      ? 'border-accent/30 bg-card'
-                      : 'border-border bg-card'
+                      ? 'border-accent/30 bg-card/80'
+                      : 'border-border bg-card/80'
                   }`}
                 >
                   {/* Header */}
@@ -86,7 +86,7 @@ export function ExperienceSection({ dict }: Props) {
                       {job.tech!.map((t) => (
                         <span
                           key={t}
-                          className="text-xs font-medium text-accent bg-accent-dim border border-accent/20 rounded-full px-2.5 py-0.5"
+                          className="text-xs font-medium text-accent bg-accent-dim border border-accent/20 rounded-full px-2.5 py-0.5 cursor-default"
                         >
                           {t}
                         </span>

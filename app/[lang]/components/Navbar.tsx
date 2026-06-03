@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import type { Dictionary, Locale } from '../../../dictionaries'
 import { locales } from '../../../dictionaries'
 
@@ -15,28 +15,28 @@ interface Props {
 
 const SECTION_KEYS: Section[] = ['home', 'experience', 'technology']
 
-export function Navbar({ dict, lang, activeSection, onSectionChange }: Props) {
-  const [isDark, setIsDark] = useState(true)
+export function Navbar ({ dict, lang, activeSection, onSectionChange }: Props) {
+  // const [isDark, setIsDark] = useState(true)
   const [menuOpen, setMenuOpen] = useState(false)
 
-  useEffect(() => {
-    setIsDark(!document.documentElement.classList.contains('light'))
-  }, [])
+  // useEffect(() => {
+  //   setIsDark(!document.documentElement.classList.contains('light'))
+  // }, [])
 
-  function toggleTheme() {
-    const html = document.documentElement
-    if (html.classList.contains('light')) {
-      html.classList.remove('light')
-      localStorage.setItem('theme', 'dark')
-      setIsDark(true)
-    } else {
-      html.classList.add('light')
-      localStorage.setItem('theme', 'light')
-      setIsDark(false)
-    }
-  }
+  // function toggleTheme () {
+  //   const html = document.documentElement
+  //   if (html.classList.contains('light')) {
+  //     html.classList.remove('light')
+  //     localStorage.setItem('theme', 'dark')
+  //     setIsDark(true)
+  //   } else {
+  //     html.classList.add('light')
+  //     localStorage.setItem('theme', 'light')
+  //     setIsDark(false)
+  //   }
+  // }
 
-  function langHref(l: Locale) {
+  function langHref (l: Locale) {
     return `/${l}#${activeSection}`
   }
 
@@ -88,17 +88,19 @@ export function Navbar({ dict, lang, activeSection, onSectionChange }: Props) {
           </div>
 
           {/* Theme toggle */}
-          <button
-            onClick={toggleTheme}
-            aria-label={dict.nav.toggleTheme}
-            className="p-2 rounded-full border border-border text-muted hover:text-fg hover:border-accent transition-colors"
-          >
-            {isDark ? (
-              <SunIcon />
-            ) : (
-              <MoonIcon />
-            )}
-          </button>
+          {/* <button */}
+          {/*   onClick={toggleTheme} */}
+          {/*   aria-label={dict.nav.toggleTheme} */}
+          {/*   className="p-2 rounded-full border border-border text-muted hover:text-fg hover:border-accent transition-colors" */}
+          {/* > */}
+          {/*   {isDark */}
+          {/*     ? ( */}
+          {/*     <SunIcon /> */}
+          {/*       ) */}
+          {/*     : ( */}
+          {/*     <MoonIcon /> */}
+          {/*       )} */}
+          {/* </button> */}
 
           {/* Mobile menu button */}
           <button
@@ -151,44 +153,44 @@ export function Navbar({ dict, lang, activeSection, onSectionChange }: Props) {
   )
 }
 
-function SunIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
-    </svg>
-  )
-}
+// function SunIcon () {
+//   return (
+//     <svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       width="16"
+//       height="16"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <circle cx="12" cy="12" r="4" />
+//       <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+//     </svg>
+//   )
+// }
+//
+// function MoonIcon () {
+//   return (
+//     <svg
+//       xmlns="http://www.w3.org/2000/svg"
+//       width="16"
+//       height="16"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="2"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//     >
+//       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+//     </svg>
+//   )
+// }
 
-function MoonIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-    </svg>
-  )
-}
-
-function MenuIcon() {
+function MenuIcon () {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

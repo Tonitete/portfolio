@@ -170,16 +170,6 @@ const eslintConfig = defineConfig([
       'import/no-duplicates': 'error',
       'import/no-named-default': 'error',
       'import/no-webpack-loader-syntax': 'error',
-      // n plugin rules
-      'n/handle-callback-err': ['error', '^(err|error)$'],
-      'n/no-callback-literal': 'error',
-      'n/no-deprecated-api': 'error',
-      'n/no-exports-assign': 'off',
-      'n/no-new-require': 'error',
-      'n/no-path-concat': 'error',
-      'n/process-exit-as-throw': 'error',
-      // promise plugin rules
-      'promise/param-names': 'error'
     }
   }
 ]);

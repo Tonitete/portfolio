@@ -5,7 +5,7 @@ import { HomeSection } from './components/HomeSection'
 import { ExperienceSection } from './components/ExperienceSection'
 import { TechnologySection } from './components/TechnologySection'
 
-export default async function Page(props: PageProps<'/[lang]'>) {
+export default async function Page (props: PageProps<'/[lang]'>) {
   const { lang } = await props.params
 
   if (!isLocale(lang)) notFound()
