@@ -9,7 +9,6 @@ Personal portfolio built with Next.js, showcasing my experience, tech stack and 
 ## Features
 
 - **Multilingual** — Spanish (default), English, Catalan
-- **Dark / Light theme** — dark by default, toggle in navbar
 - **Sections:** Home · Experience timeline · Technology stack
 - **Animated star field background** with realistic stellar colors and a neutron star pulsar
 - **Responsive** — mobile-first layout
